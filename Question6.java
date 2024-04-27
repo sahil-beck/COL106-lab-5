@@ -1,5 +1,4 @@
 public class Question6 {
-
     private static int findCount (String s) {
         int lps[] = new int[2 * s.length() + 1], maxLps = 0;
         s += '#';

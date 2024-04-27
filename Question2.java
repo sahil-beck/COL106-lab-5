@@ -2,7 +2,7 @@ import java.util.Vector;
 
 public class Question2 {
     private static class Node {
-        Node children_[];
+        Node children_[]; // assumption : order doesn't matter in the answer
         boolean end_;
         public Node () {
             children_ = new Node[26];

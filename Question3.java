@@ -4,8 +4,8 @@ public class Question3 {
     public static String longestCommonPrefix(String[] strings) {
         String ans = "";
         Arrays.sort(strings);
-        for (int i = 0, n = Math.min(strings[0].length(), strings[strings.length - 1].length()); i < n; i++) {
-            if (strings[0].charAt(i) != strings[strings.length - 1].charAt(i)) break;
+        for (int i = 0, ul = strings.length - 1, n = Math.min(strings[0].length(), strings[ul].length()); i < n; i++) {
+            if (strings[0].charAt(i) != strings[ul].charAt(i)) break;
             ans += strings[0].charAt(i);
         }
         return ans;
